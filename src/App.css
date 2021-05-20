@@ -1,3 +1,6 @@
+body {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
 .img-fluid {
     max-width: 50%;
     height: auto;
@@ -51,6 +54,9 @@ img {
     left: 11%;
     width: 80%;
   }
+  .btn-light {
+    padding-top: 5px;
+  }
 }
 @media screen and (max-width: 400px) {
   .search {
@@ -62,7 +68,7 @@ img {
   .btn-light {
     margin-left: 10px;
   }
-   header {
+  header {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
