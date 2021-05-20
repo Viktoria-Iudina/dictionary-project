@@ -8,7 +8,7 @@ export default function App() {
         <img src={books} alt="books" className="img-fluid pt-5" />
         <div className="search">
           <input className="form-control form-control-lg shadow" type="text" placeholder="Search a word"></input>
-          <a href="#" className="btn btn-light shadow">🔎</a>
+          <button className="btn btn-light shadow">🔎</button>
         </div>
       </header>
     </div>
