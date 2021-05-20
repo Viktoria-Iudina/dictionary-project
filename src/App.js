@@ -1,6 +1,6 @@
 import books from "./books.png";
 import './App.css';
-import Dictionary from './Dictionary';
+//import Dictionary from './Dictionary';
 
 export default function App() {
   function search() {
@@ -20,7 +20,6 @@ export default function App() {
         </header>
 
         <main>
-          <Dictionary />
         </main>
         <footer className="text-center pt-5 pb-5">
           <small>Coded by Viktoriia Iudina</small>
