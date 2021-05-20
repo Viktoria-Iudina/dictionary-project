@@ -1,6 +1,6 @@
 import books from "./books.png";
 import './App.css';
-import Dictionary from "./Dictionary";
+import Dictionary from './Dictionary';
 
 export default function App() {
   function search() {
