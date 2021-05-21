@@ -9,27 +9,23 @@ body {
 }
 header {
     background-color:#d5b7da45;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 img {
     position: relative;
     width: 100%;
 }
-
 .form-control {
-    border-radius: 20px;
-    border: 0.5rem outset rgb(252, 208, 215);
-    font: bold 1rem sans-serif;
-    padding: 1rem;
-    outline-offset: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(252, 208, 215);
 }
+
 .search {
-    position: absolute;
-    top: 30%;
-    left: 25%;
     display: flex;
-    width: 50%;
+    justify-content: center;
 }
 .btn-light {
     margin-left: 20px;
@@ -40,66 +36,19 @@ img {
     padding-right: 19px;
     padding-left: 19px;
 }
-@media screen and (max-width: 800px) {
-  .search {
-    left: 15%;
-    width: 70%;
-  }
-}
 
 @media screen and (max-width: 539px) {
-  .search {
-    position: absolute;
-    top: 220px;
-    left: 11%;
-    width: 80%;
-  }
   .btn-light {
     padding-top: 5px;
   }
 }
 @media screen and (max-width: 400px) {
-  .search {
-    position: absolute;
-    top: 182px;
-    left: 6%;
-    width: 90%;
-  }
   .btn-light {
     margin-left: 10px;
   }
-  header {
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
 }
 @media screen and (max-width: 375px) {
-  .search {
-    position: absolute;
-    top: 173px;
-    left: 6%;
-    width: 90%;
-  }
   .btn-light {
     margin-left: 10px;
   }
-  header {
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
-}
-@media screen and (max-width: 320px) {
-  .search {
-    position: absolute;
-    top: 155px;
-    left: 6%;
-    width: 90%;
-  }
-  .btn-light {
-    margin-left: 10px;
-  }
-  header {
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
 }
