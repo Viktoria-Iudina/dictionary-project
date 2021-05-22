@@ -2,19 +2,19 @@ body {
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 .img-fluid {
-    max-width: 50%;
-    height: auto;
-    margin: auto;
-    display: block;
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
 }
 header {
-    background-color:#d5b7da45;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+  background-color: #d5b7da45;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 img {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 .form-control {
   padding: 1rem;
@@ -24,17 +24,17 @@ img {
 }
 
 .search {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .btn-light {
-    margin-left: 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: rgb(252, 208, 215);
-    padding-top: 10px;
-    padding-right: 19px;
-    padding-left: 19px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(252, 208, 215);
+  padding-top: 10px;
+  padding-right: 19px;
+  padding-left: 19px;
 }
 
 @media screen and (max-width: 539px) {
