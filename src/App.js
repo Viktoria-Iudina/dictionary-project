@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import books from "./books.png";
 import './App.css';
 import axios from "axios";
-//import Dictionary from './Dictionary';
+import Results from './Results';
 
 export default function App() {
   let [keyword, setKeyword] = useState(""); 
+  let [results, setResults] = useState(null);
+
 
   function handleResponse(response) {
-    console.log(response.data);
+    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function search(event) {
@@ -37,6 +40,7 @@ export default function App() {
         </header>
 
         <main>
+          <Results results={results} />
         </main>
         <footer className="text-center pt-5 pb-5">
           <small>Coded by Viktoriia Iudina</small>
