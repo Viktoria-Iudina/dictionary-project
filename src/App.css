@@ -37,6 +37,9 @@ img {
   padding-left: 19px;
 }
 
+a {
+  text-decoration: none;
+}
 @media screen and (max-width: 539px) {
   .btn-light {
     padding-top: 5px;

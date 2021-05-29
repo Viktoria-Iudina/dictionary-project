@@ -43,7 +43,7 @@ export default function App() {
           <Results results={results} />
         </main>
         <footer className="text-center pt-5 pb-5">
-          <small>Coded by Viktoriia Iudina</small>
+          <small>Coded by <a href="https://github.com/Viktoria-Iudina/dictionary-project">Viktoriia Iudina</a></small>
         </footer>
       </div>
     </div>
