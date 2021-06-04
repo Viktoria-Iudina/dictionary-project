@@ -5,47 +5,61 @@ import axios from "axios";
 import Results from './Results';
 
 export default function App() {
-  let [keyword, setKeyword] = useState(""); 
+  let [keyword, setKeyword] = useState("hello"); 
   let [results, setResults] = useState(null);
-
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     console.log(response.data[0]);
     setResults(response.data[0]);
   }
 
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     console.log(apiUrl);
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
 
-  return (
-    <div className="App">
-      <div className="container">  
-        <header>
-        <img src={books} alt="books" className="img-fluid pt-5" />
-          <div className="search">
-            <form onSubmit={search}>
-              <input onChange={handleKeywordChange} className="form-control shadow" type="search" placeholder="Search a word" autoFocus={true}></input>
-            </form>
-            <button className="btn btn-light shadow"> 🔎  </button>
-          </div>
-        </header>
+  function load() {
+    setLoaded(true);
+    search();
+  }
 
-        <main>
-          <Results results={results} />
-        </main>
-        <footer className="text-center pt-5 pb-5">
-          <small>Coded by <a href="https://github.com/Viktoria-Iudina/dictionary-project">Viktoriia Iudina</a></small>
-        </footer>
+  if (loaded) {
+    return (
+      <div className="App">
+        <div className="container">  
+          <header>
+          <img src={books} alt="books" className="img-fluid pt-5" />
+          <div className="searchHint">
+              <form onSubmit={handleSubmit}>
+                <input onChange={handleKeywordChange} className="form-control" type="search" placeholder="Which word are you searching for?" autoFocus={true}></input>
+              </form>
+              <small className="hint p-3">Suggested words: sunset, wine, work</small>
+            </div>
+          </header>
+  
+          <main>
+            <Results results={results} />
+          </main>
+          <footer className="text-center pt-5 pb-5">
+            <small>Coded by <a href="https://github.com/Viktoria-Iudina/dictionary-project">Viktoriia Iudina</a></small>
+          </footer>
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    load();
+    return "Loading...";
+  }
+
 }
