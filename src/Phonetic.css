@@ -1,0 +1,16 @@
+.listen {
+    border: 1px solid #ddd;
+    border-radius: 19px;
+    color: #ad71ea;
+    padding: 8px 15px;
+    transition: all 200ms ease-in-out;
+    margin-right: 15px;
+}
+
+.listen:hover {
+    background-color: #ad71ea;
+    color: white;
+}
+.Phonetic {
+    padding-bottom: 15px;
+}
