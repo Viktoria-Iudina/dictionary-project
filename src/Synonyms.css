@@ -1,5 +1,7 @@
 .Synonyms li {
     display: inline;
-    margin-top: 20px;
     padding-right: 15px;
+}
+.Synonyms {
+    padding-top: 15px;
 }

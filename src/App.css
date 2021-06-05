@@ -37,7 +37,7 @@ a {
 }
 .example {
   font-style: italic;
-  font-size: 14px;;
+  font-size: 14px;
 }
 @media screen and (max-width: 539px) {
   .btn-light {
