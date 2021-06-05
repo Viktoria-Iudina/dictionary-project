@@ -1,6 +1,10 @@
 body {
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
+.App {
+  max-width: 810px;
+  margin: 0 auto;
+}
 .img-fluid {
   max-width: 50%;
   height: auto;
